@@ -11,22 +11,6 @@
 
 // Write our function (we must define it too!) below
 // ...
-const joinList = function(array) {
-  /// create joinList function the pulls an array
-  let newString = "";
-  // define a variable that will pull the elements of the array into a string
-  for (var i = 0; i < array.length; i++) {
-    if (i === array.length - 1) {
-      // iterate over the array to the last element
-      newString += array[i];
-      // add the last element of the array into newString
-    } else {
-      newString += array[i] + ", ";
-      // add all but the last element to newString, seperating them all by a comma
-    }
-  }
-  return newString;
-};
 
 const joinList = function(array) {
   /// create joinList function the pulls an array
