@@ -7,14 +7,15 @@ const findWaldo = function(names, found) {
   for (let i = 0; i < names.length; i++) {
     let name = names[i];
     if (name === "Waldo") {
-      found(); // execute callback
+      // change found parameters such that the element index of Waldo, and his name is passed through the actionWhenFound function
+      found(i); // execute callback
     }
   }
 };
-
+// Adjust callback function to receive and use the index
 const actionWhenFound = function(index) {
   // log "Found Waldo at index 2!"
-  console.log(`Found ${name} at index ${index}!`);
+  console.log(`Found Waldo at index ${index}!`);
 };
 
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
