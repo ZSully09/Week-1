@@ -4,13 +4,25 @@
 
 // The second argument/parameter is expected to be a (callback) function
 const findWaldo = function(names, found) {
-  for (let i = 0; i < names.length; i++) {
-    let name = names[i];
+  // for (let i = 0; i < names.length; i++) {
+  //   let name = names[i];
+  //   if (name === "Waldo") {
+  //     found(i, name); // execute callback
+  //   }
+  // }
+  // ===========
+  // const perPerson = function(name, i) {
+  //   if (name === "Waldo") {
+  //     found(i, name);
+  //   }
+  // }
+  // names.forEach(perPerson);
+  // ============
+  names.forEach((name, i) => {
     if (name === "Waldo") {
-      // change found parameters such that the element index of Waldo, and his name is passed through the actionWhenFound function
-      found(i, name); // execute callback
+      found(i, name);
     }
-  }
+  });
 };
 // Adjust callback function to receive and use the index
 const actionWhenFound = function(index, name) {
