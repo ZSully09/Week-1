@@ -8,3 +8,9 @@
 // }
 
 // console.log(sumToOne(4));
+
+/*
+Converting to Recursion:
+Base Case: n === 1.
+Resursive Case: n > 1
+*/
