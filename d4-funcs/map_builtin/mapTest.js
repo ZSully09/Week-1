@@ -13,5 +13,3 @@ const lighthouses = [
 // It should output: [ 15, 13, 11, 16, 10, 11, 10 ]
 const charCount = lighthouses.map(lh => lh.length);
 console.log(charCount);
-
-// test
