@@ -14,3 +14,10 @@ Converting to Recursion:
 Base Case: n === 1.
 Resursive Case: n > 1
 */
+
+//Implement the base case:
+function sumToOne(n) {
+  if (n === 1) {
+    return 1;
+  }
+}
