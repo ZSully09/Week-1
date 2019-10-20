@@ -2,7 +2,7 @@ function printItems(array) {
   array.forEach(item => {
     // Recursive Case
     if (Array.isArray(item)) {
-      // Print out all it's items individually
+      // Print out all it's items individually as strings
       printItems(item);
     }
     // Base Case
